@@ -149,6 +149,11 @@ exports.config = {
     // variables, such as `browser`. It is the perfect place to define custom commands.
     // before: function (capabilities, specs) {
     // },
+    before: function() {
+      var chai = require('chai');
+      global.expect = chai.expect;
+      chai.Should();
+    }
     //
     // Hook that gets executed before the suite starts
     // beforeSuite: function (suite) {
@@ -198,3 +203,13 @@ exports.config = {
     // onComplete: function(exitCode) {
     // }
 }
+
+var webdriverio = require('webdriverio');
+var options = {
+  desiredCapabilities: {
+    browserName: 'firefox'
+  }
+};
+webdriverio
+  .remote(options)
+  .init();
