@@ -203,13 +203,3 @@ exports.config = {
     // onComplete: function(exitCode) {
     // }
 }
-
-var webdriverio = require('webdriverio');
-var options = {
-  desiredCapabilities: {
-    browserName: 'firefox'
-  }
-};
-webdriverio
-  .remote(options)
-  .init();
