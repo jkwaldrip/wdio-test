@@ -1,2 +1,5 @@
 # Always ignore Vim swap files
 *.swp
+
+# Ignore Node Modules, use package.json like normal
+node_modules

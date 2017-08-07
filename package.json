@@ -1,0 +1,29 @@
+{
+  "name": "wdio-test",
+  "version": "1.0.0",
+  "description": "A simple WDIO test",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "wdio-selenium-standalone-service": "^0.0.7",
+    "wdio": "^0.3.3",
+    "wdio-mocha-framework": "^0.5.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkwaldrip/wdio-test.git"
+  },
+  "author": "Jain Waldrip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkwaldrip/wdio-test/issues"
+  },
+  "homepage": "https://github.com/jkwaldrip/wdio-test#readme"
+}
